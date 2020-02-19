@@ -1,4 +1,5 @@
 
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -18,6 +19,10 @@ Note: code is for reference only (taken from an online course)
 
 
 if __name__ == '__main__':
+    os.cpu_count()  # to find number of cores supported by the computer
+    # note: this could be useful for training multiple competing models
+
+    ######################################################################
     # Extracting a Logistic Regression parameter:
 
     # Create a list of original variable names from the training DataFrame
